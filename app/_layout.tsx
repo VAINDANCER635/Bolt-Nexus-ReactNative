@@ -1,24 +1,51 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+import { Stack } from "expo-router";
+import { AuthProvider, useAuth } from "@/context/auth-context";
+import "@/global.css";
+import { View, ActivityIndicator } from "react-native";
+import { ThemeProvider } from "@/context/theme-context";
 
-import { useColorScheme } from '@/hooks/use-color-scheme';
+function RootStack() {
+  const { user, initializing } = useAuth();
 
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
-
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
+  if (initializing) {
+    return (
+      <View className="flex-1 items-center justify-center">
+        <ActivityIndicator size="large" />
+      </View>
+    );
+  }
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <Stack
+      screenOptions={{
+        headerShown: false,
+        contentStyle: { backgroundColor: "#000" },
+      }}
+    >
+      {!user ? (
+        <Stack.Screen
+          name="(auth)"
+          options={{
+            animation: "fade", // 👈 fade for auth screens
+          }}
+        />
+      ) : (
+        <Stack.Screen
+          name="(tabs)"
+          options={{
+            animation: "slide_from_right", // 👈 slide for tabs
+          }}
+        />
+      )}
+    </Stack>
+  );
+}
+export default function RootLayout() {
+  return (
+    <AuthProvider>
+      <ThemeProvider>
+        <RootStack />
+      </ThemeProvider>
+    </AuthProvider>
   );
 }

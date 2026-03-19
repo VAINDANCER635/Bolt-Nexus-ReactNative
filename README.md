@@ -1,50 +1,67 @@
-# Welcome to your Expo app 👋
+<div align="center">
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<h1>⚡ Bolt Nexus</h1>
 
-## Get started
+**High-Fidelity Financial Command Center**  
+Boutique neo-banking ecosystem built for the future of wealth.
 
-1. Install dependencies
+</div>
 
-   ```bash
-   npm install
-   ```
+### 🌟 Overview
 
-2. Start the app
+Bolt Nexus is a **premium, secure mobile-first wealth interface** — designed to redefine how people interact with their finances.  
 
-   ```bash
-   npx expo start
-   ```
+It combines:
+- **3D "Titanium Node" architecture** — immersive, animated financial visualization powered by Reanimated
+- **Biometric-encrypted asset management** — end-to-end protection with device-level auth
+- **Agentic UI** — intelligent, adaptive interface that anticipates user needs
+- **Buttery-smooth performance** — cross-platform native feel using React Native + Expo + Reanimated
 
-In the output, you'll find options to open the app in a
+This is not just another banking app — it's a **command center** for modern wealth: fast, locked-down, and built to scale.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 🛡️ Status & License
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Proprietary & Closed-Source**  
+  All rights reserved. This repository is view-only for portfolio purposes.  
+  No rights are granted to use, copy, modify, distribute, or create derivative works without explicit written permission from Adam Korrison (@korrisonadam).
 
-## Get a fresh project
+- **Current Stage**: Early prototype / core architecture  
+  Actively developed — initial template evolving into full neo-banking MVP.
 
-When you're ready, run:
+### 🔧 Tech Stack Highlights
 
-```bash
-npm run reset-project
-```
+| Category          | Technologies Used                          |
+|-------------------|--------------------------------------------|
+| Framework         | React Native, Expo                         |
+| Animations/UI     | Reanimated (for 3D Titanium Node & fluid gestures) |
+| Security          | Biometrics, secure storage, encrypted flows |
+| Language          | TypeScript                                 |
+| Architecture      | Agentic UI patterns, modular components    |
+| Other             | React Navigation, Zustand / Jotai (state), Expo Router |
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+**Roots**: React, Next.js, Svelte, Ionic, Flutter (exploring bridges)
 
-## Learn more
+### 🔥 Key Features (In Progress / Planned)
 
-To learn more about developing your project with Expo, look at the following resources:
+- Immersive 3D financial node visualization (Titanium Node concept)
+- Biometric login + transaction signing
+- Real-time asset tracking & management
+- Adaptive, AI-augmented UI that learns user behavior
+- Cross-platform (iOS + Android) with native performance
+- Dark/neon premium design language
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 🚀 Roadmap Teaser
 
-## Join the community
+- Q2 2026: Core auth + asset vault MVP
+- Q3 2026: 3D node animations + agentic interactions
+- Q4 2026: Beta testing with select users
+- Future: Web companion (Next.js), Flutter hybrid options
 
-Join our community of developers creating universal apps.
+### 📸 Screenshots / Previews
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+(Add screenshots here once you have them — e.g. login screen, 3D node demo GIFs)
+
+```markdown
+<!-- Placeholder for future media -->
+<image-card alt="Login Screen" src="https://via.placeholder.com/400x800/0D1117/00BFFF?text=Secure+Login" ></image-card>
+<image-card alt="Titanium Node 3D" src="https://via.placeholder.com/400x800/0D1117/00BFFF?text=3D+Node+Visualization" ></image-card>
